@@ -1,0 +1,130 @@
+body {
+  background-color: rgb(107, 117, 131);
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  border: 4px solid rgb(91, 99, 143);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  background-color: rgb(107, 117, 131);
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 30px #333;
+  box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 320px #252422;
+}
+
+.one {
+  width: 150px;
+  overflow: hidden;
+
+  border: 10px black;
+  box-shadow: 2px 5px 10px black;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  animation: ava-animate 5s infinite alternate;
+}
+.post {
+  text-align: center;
+  width: auto;
+}
+
+.empty {
+  width: 200px;
+}
+
+div h3 {
+  font-size: 32px;
+  font-weight: 400;
+  color: rgb(188, 199, 238);
+}
+
+.hero__links {
+  display: inline-block;
+}
+
+.hero__link {
+  margin-right: 10px;
+
+  font-size: 30px;
+  color: black;
+}
+
+.contact {
+  color: rgb(60, 64, 78);
+  margin: 5px;
+  text-decoration: none;
+
+  transition: color 0.2s linear;
+}
+
+.contact:hover {
+  color: rgb(57, 91, 214);
+}
+
+@keyframes ava-animate {
+  .empty {
+    width: 200px;
+  }
+
+  0% {
+    border-radius: 62% 38% 70% 30% / 47% 61% 39% 53%;
+  }
+
+  20% {
+    border-radius: 45% 55% 39% 61% / 74% 34% 66% 26%;
+  }
+
+  40% {
+    border-radius: 84% 16% 72% 28% / 72% 66% 34% 28%;
+  }
+
+  60% {
+    border-radius: 97% 3% 92% 8% / 46% 59% 41% 54%;
+  }
+
+  80% {
+    border-radius: 70% 30% 76% 24% / 64% 36% 64% 36%;
+  }
+
+  100% {
+    border-radius: 57% 43% 89% 11% / 49% 20% 80% 51%;
+  }
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  font-size: 16px;
+}
+
+.nav_link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+
+  color: rgb(188, 199, 238);
+  text-decoration: none;
+
+  transition: color 0.2s linear;
+}
+
+.nav_link:hover {
+  color: rgb(57, 91, 214);
+}
